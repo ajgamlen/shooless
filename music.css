@@ -1,0 +1,147 @@
+
+.heading {
+    padding: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 0;
+  }
+#music{
+  margin-top: 0px;
+}
+button.nav-link{
+   color: white;
+}
+.nav-item button.nav-link:hover {
+   /* font-family: "Magda-Trash"; */
+  color: rgba(255, 255, 255, 0.5);
+}
+  #canvas{
+    width: 10%;
+  }
+  .st0{
+    fill:#ffffff;stroke:#ffffff;stroke-miterlimit:10;
+  }
+.mobile{
+  visibility: hidden;
+}
+
+/* Style tab links */
+.tablink {
+  color: white;
+   text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0,0);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  /* padding: 14px 16px; */
+  width: 50%;
+ 
+}
+
+
+.tablink:hover {
+   /* font-family: "Magda-Trash"; */
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* color: white; */
+  display: none;
+  padding: 70px 20px;
+  height: 100%;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.5s ease; /* Fade effect */
+}
+
+.tabcontent.show {
+  display: block; /* Ensure element is visible */
+  opacity: 1; /* Fully visible */
+}
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+  }
+
+
+  .row {margin: 0 -5px;}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .card {
+    padding: 16px;
+    text-align: center;
+    border: 0;
+    background-color: rgba(1, 1, 1, 0);
+    color: white;
+  }
+
+.card h3{
+  font-family: "Blur";
+  font-weight: light;
+  font-size: 1em;
+  padding-bottom: 0.5em;
+}
+.card p{
+   font-size: 0.8em;
+  padding-top: 1em;
+}
+  .card img{
+    width: 100%;
+  }
+
+
+  .responsive-two-column-grid {
+      display:block;
+  }
+
+
+  .responsive-two-column-grid > * {
+      padding:1rem;
+  }
+
+  @media (min-width:768px) {
+      .responsive-two-column-grid {
+          display: grid;
+        padding: 0px 200px 0px 200px;
+          grid-template-columns: 1fr 1fr;
+      }
+   
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    #canvas{
+      width: 30%;
+    }
+    .mobile{
+      visibility: visible;
+    }
+    #music{
+      margin-top: 100px;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+  
+  #canvas{
+    width: 40%;
+  }
+ 
+}
+
