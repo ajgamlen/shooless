@@ -22,8 +22,21 @@
 
 <body>
   
+  
   <main id="home">
+    
     <div class="gradient" id="bg">
+      <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Lonely Playground</h2>
+        <p>(Vinyl LP, Red)</p>
+       
+         
+          <img src="https://i.ibb.co/zhg22vD/shooless-album.gif" alt="Girl in a jacket">
+       <p>November 29, 2024</p>
+        <a target="_blank" href="//flyingout.co.nz/products/shooless-lonely-playground-vinyl-lp-red">Pre-order</a>
+    </div>
+
   <div id="gallery" onclick="off()"> <div class="masonry" data-cues="fadeIn">
      <div class="mItem">
        <img src="https://i.ibb.co/XxSFtz8/img55.jpg">
@@ -258,6 +271,22 @@
   <script src="js/jquery.ripples.js"></script>
   <script src="js/scrollCue.min.js"></script>
   <script>scrollCue.init();</script>
+  <script type="text/javascript">
+    window.addEventListener("load", function(){
+        setTimeout(
+            function open(event){
+                document.querySelector(".popup").style.display = "block";
+            },
+            1000 
+        )
+    });
+    
+         
+    
+    document.querySelector("#close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+        </script>
   
 </body>
 
