@@ -253,6 +253,8 @@ width: 40%;
   font-size: 1.3em;
   color: white;
    transition: color 0.5s ease;
+   font-family: "Blur";
+   
 }
 .overlay .closebtn:hover {
    color: #818181;
@@ -469,6 +471,64 @@ img {
     width: 50%;
   }
 }
+.popup{
+  background-color: #ffffff;
+  width: 420px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  /* border-radius: 8px; */
+  display: none; 
+  text-align: center;
+}
+    .popup img{
+      display: block;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+    }
+.popup button{
+  display: block;
+  margin:  0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
 
+
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  filter:blur(0px);
+  transition: 0.3s;
+}
+.popup button:hover{
+  filter:blur(3px);
+}
+.popup h2{
+margin-top: -20px;
+font-family:"Blur";
+font-size: 1.5em;
+}
+.popup a{
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background-color: black;
+  /* border-radius: 20px; */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
+  filter:blur(0px);
+  transition: 0.3s;
+}
+.popup a:hover{
+  filter:blur(3px);
+}
 
 
