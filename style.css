@@ -253,7 +253,6 @@ width: 40%;
   font-size: 1.3em;
   color: white;
    transition: color 0.5s ease;
-   font-family: "Blur";
    
 }
 .overlay .closebtn:hover {
