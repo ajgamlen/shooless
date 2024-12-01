@@ -28,16 +28,7 @@
   
     
     <div class="gradient" id="bg">
-      <!-- <div class="popup">
-        <button id="close">&times;</button>
-        <h2>Lonely Playground</h2>
-        <p>(Vinyl LP, Red)</p>
-       
-         
-          <img src="https://i.ibb.co/zhg22vD/shooless-album.gif" alt="Girl in a jacket">
-       <p>November 29, 2024</p>
-        <a target="_blank" href="//flyingout.co.nz/products/shooless-lonely-playground-vinyl-lp-red">Pre-order</a>
-    </div> -->
+ 
     <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand d-md-none" href="#"onclick="off()">Shooless</a>
@@ -52,7 +43,9 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="music.html">Music</a>
+              <!-- <a class="nav-link" onclick="transitionToPage('music.html')">Music</a> -->
+              <!-- <a class="nav-link" href="music.html">Music</a> -->
+              <span class="nav-link" onclick="transitionToPage('music.html')">Music</span>
             </li>
             <li class="nav-item">
               <a style="cursor:pointer"class="nav-link"onclick="openStream()">Stream</a>
@@ -72,7 +65,7 @@
       </div>
     </nav>
 
-  <div id="gallery" onclick="off()"> <div class="masonry" data-cues="fadeIn">
+  <div id="gallery" onclick="off()"> <div class="masonry" data-cues="fadeIn" data-sort="random">
      <div class="mItem">
        <img src="https://i.ibb.co/XxSFtz8/img55.jpg">
      </div>
